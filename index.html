@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>我的个人简历网站</title>
+
+		<!--mobile apps/移动-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="application/x-javascript">
+			// addEventListener() 方法用于向指定元素添加事件句柄。
+			// Internet Explorer 8 及更早IE版本不支持 addEventListener() 方法，，Opera 7.0 及 Opera 更早版本也不支持。 但是，对于这些不支持该函数的浏览器，你可以使用 attachEvent() 方法来添加事件句柄 (查看 "更多实例" 了解跨浏览器的解决方案)。
+			// element.addEventListener(event/必须，字符串，指定事件名。, function/必须。指定要事件触发时执行的函数。 , useCapture/可选。布尔值，指定事件是否在捕获或冒泡阶段执行。)
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);//setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。
+				}, false);
+			function hideURLbar(){
+				// scrollTo() 方法可把内容滚动到指定的坐标。
+				window.scrollTo(0,1);
+			}
+		</script>
+		<!--mobile apps-->
+
+		<!--Custom Theme files/自定义文件-->
+		<link rel="shortcut icon" href="images/your_ico.ico" type="image/x-icon">
+		<link rel="icon" href="images/your_ico.ico" type="image/x-icon">
+		<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+		<link rel="stylesheet" href="css/swipebox.css">
+		<!--Custom Theme files-->
+
+		<!--js-->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<!--js -->
+
+		<!--web-fonts/字体-->
+		<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<!--web-fonts-->
+
+		<!--start-smooth-scrolling/平滑滚动结束-->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			//在文档加载后激活函数
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					//防止链接打开 URL
+					event.preventDefault();
+					//animate() 方法执行 CSS 属性集的自定义动画。
+					// 该方法通过CSS样式将元素从一个状态改变为另一个状态。CSS属性值是逐渐改变的，这样就可以创建动画效果。
+					// 只有数字值可创建动画（比如 "margin:30px"）。字符串值无法创建动画（比如 "background-color:red"）。
+					// 注释：使用 "+=" 或 "-=" 来创建相对动画（relative animations）。
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!--end-smooth-scrolling-->
+	</head>
+
+	<body>
+		<!--banner-->
+		<div id="home" class="banner">
+			<div class="banner-info">
+				<div class="container">
+					<div class="col-md-4 header-left">
+						<img src="images/个人自拍照.jpg" alt=""/>
+					</div>
+					<div class="col-md-8 header-right">
+						<h2>Hello</h2>
+						<h1>林庆庆</h1>
+						<h6>Java前端开发程序媛</h6>
+						<ul class="address">
+							<li>
+								<ul class="address-text">
+									<li><b>性别 </b></li>
+									<li>女</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>出生日期 </b></li>
+									<li>1993-11-20</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>政治面貌 </b></li>
+									<li>团员</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>学历 </b></li>
+									<li>全日制大专生</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>手机号码 </b></li>
+									<li>13761004701</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>现居住地址 </b></li>
+									<li>浙江省杭州市西湖区五联西苑</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>个人邮箱 </b></li>
+									<li><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=OwoLDg0MAwgIDgJ7SkoVWFRW" target="_blank"> 1365236193@qq.com</a></li>
+								</ul>
+							</li>
+							<li>
+								<ul class="address-text">
+									<li><b>求职意向 </b></li>
+									<li>技术开发程序员/技术支持工程师</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--banner-->
+
+		<!--top-nav-->
+		<div class="top-nav wow">
+			<div class="container">
+				<div class="navbar-header logo">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						导航
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling/用于切换的导航链接、表单和其他内容 -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="menu">
+						<ul class="nav navbar">
+							<li><a href="#about" class="scroll">关于我</a></li>
+							<li><a href="#work" class="scroll">个人经历</a></li>
+							<li><a href="#education" class="scroll">教育背景</a></li>
+							<li><a href="#skills" class="scroll">专业技能</a></li>
+							<li><a href="#projects" class="scroll">部分作品</a></li>
+							<li><a href="#contact" class="scroll">联系我们</a></li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--top-nav-->
+
+		<!--about/个人优势-->
+		<div id="about" class="about">
+			<div class="container">
+				<h3 class="title"> 关于我</h3>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本人是医药经济信息管理专业毕业的全日制大专生,做过1年以上的电话客服的实习工作经验，擅长跟他人沟通，具有较强的用户研究、市场分析能力，对中国用户的社会形态、生活方式有丰富的认识和独特的见解。</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拥有多年的IT工作经验；经过时间的积累和沉淀已经有了自己的设计技巧和风格，性格低调，比较细心，责任感强，有进取心，诚实可靠。有很强的团队合作意识和一定的领导能力，具有良好的开发能力,思维敏锐，学习能力、表达能力出众。</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其中包括有6个月互联网产品经理助理加上后端开发的工作经验，熟练使用Axure原型产品设计，有较强的设计能力，工作积极性高，拥有创新思维、能承受较大的工作压力。</p>
+				    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其余是做了三年以上的Java前端工程师，有着丰富金融开发经验，精通Struts Hibernate Spring等主流开源框架，对面向对象、MVC有深刻的理解，熟练使用PowerDesign、OmniGraffle等常用软件建模工具进行系统分析和设计，熟悉运用MySQl，SQL Server等数据库开发及Weblogic/Tomcat/JBoss等主流应用服务器及MySQl数据库开发技术，另外还掌握常用需求/架构设计工具使用。</p>
+					<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--about-->
+
+		<!--work-experience-->
+		<div id="work" class="work">
+			<div class="container">
+				<h3 class="title">个人经历</h3>
+				<div class="work-info">
+					<div class="col-md-6 work-right work-right2">
+						<h4>2018/8 - 2019/5 </h4>
+					</div>
+					<div class="col-md-6 work-left work-left2">
+						<h5> <a href="http://www.byavs.com/">杭州博雅鸿图视频技术有限公司</a> <span class="glyphicon glyphicon-briefcase"> </span></h5>
+						<p>主要负责设计及撰写功能说明书、业务流程图、用户操作手册等各项需求分析文档； 完成网站产品原型设计及产品开发，参与最终产品需求和功能验收；负责数据分析系统的业务数据梳理；进行程序单元、功能的测试，查出软件存在的缺陷并保证其质量；进行编制项目文档和质量记录的工作； 协同他人一起管理产品的上架！ </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="work-info">
+					<div class="col-md-6 work-left">
+						<h4>2017/5 - 2018/8 </h4>
+					</div>
+					<div class="col-md-6 work-right">
+						<h5><span class="glyphicon glyphicon-briefcase"> </span> <a href="http://www.idcos.com/">杭州云霁科技有限公司</a></h5>
+						<p>主要负责Web系统前后端的开发和维护、BUG修复相关产品需求分析，部分模块实现、优化以及文档编写等工作；根据需求和总体设计，进行线上产品的二次开发及数据库表设计； 根据开发进度和任务分配，完成相应模块软件的设计、开发、编程任务；进行程序单元、功能的测试，查出软件存在的缺陷并保证其质量；进行编制项目文档和质量记录的工作； 完成主管安排的其他任务 </p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="work-info">
+					<div class="col-md-6 work-right work-right2">
+						<h4>2016/3 - 2017/5 </h4>
+					</div>
+					<div class="col-md-6 work-left work-left2">
+						<h5> 上海恺域信息科技有限公司 <span class="glyphicon glyphicon-briefcase"></span> </h5>
+						<p>主要负责设计爬虫策略，提升抓取的效率和质量； 负责多平台信息爬取和内容提取分析； 参与各种核心抓取策略、算法的设计与开发， 提升网页抓取的效率和质量； 参与本组负责系统的模块设计，确保系统的开发质量；</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="work-info">
+					<div class="col-md-6 work-left">
+						<h4>2014/9 - 2015/8 </h4>
+					</div>
+					<div class="col-md-6 work-right">
+						<h5><span class="glyphicon glyphicon-briefcase"> </span> 宁波江东天开企业策划有限公司</h5>
+						<p>2014年9月进入这家公司开始本人的实习生涯，主要负责售前淘宝客服、售后电话客服，一旦客户是在宁波市区内下单需要当天送达，打印快递单。</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--work-experience-->
+
+
+		<!--education-->
+		<div id="education" class="education">
+			<div class="container">
+				<h3 class="title">教育背景</h3>
+				<div class="work-info">
+					<div class="col-md-6 work-left">
+						<h4>医药经济信息管理专业 - 2015</h4>
+						<p>主要课程是经济学基础、经济法、国际金融、统计学、财务会计、市场调查与预测、管理学、管理信息系统、经济情报分析、商务英语；具有全面素质和综合职业能力，能够在工商企业及其他系统从事经济信息收集、处理和分析的高级技术应用性专门人才，获得信息采集、分析与处理能力</p>
+					</div>
+					<div class="col-md-6 work-right">
+						<h5><span class="glyphicon glyphicon-education"> </span> <a href="http://www.zjpc.net.cn/">浙江医药高等专科学校</a></h5>
+						<p>浙江医药高等专科学校（Zhejiang Pharmaceutical College），简称浙药，中国最早独立设置、宁波市奉化区第一所大学、浙江省惟一一所公办医药类专科层次高等院校，位于浙江省宁波市，行政隶属浙江省药品监督管理局（副厅级），教育业务管理隶属浙江省教育厅。毕业生“专升本”升学率在浙江省所有高职高专中排名第一位。</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--education-->
+
+		<!--skills-->
+		<div id="skills" class="skills">
+			<div class="container">
+				<h3 class="title">专业技能</h3>
+				<div class="skills-info">
+					<div class="col-md-6 bar-grids">
+						<h6>JAVA  <span> 80% </span></h6>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 80%">
+							</div>
+						</div>
+						<h6>MYSQL <span> 70% </span></h6>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 70%">
+							</div>
+						</div>
+						<h6>JAVASCRIPT <span>90% </span></h6>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 90%">
+							</div>
+						</div>
+						<h6>PHOTOSHOP <span> 75% </span></h6>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 75%">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 bar-grids">
+						<h6>AXURE PR <span> 85% </span></h6>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 85%">
+							</div>
+						</div>
+						<h6>WPS OFFICE <span> 95% </span></h6>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 95%">
+							</div>
+						</div>
+						<h6>WEB 前端 <span>80% </span></h6>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 80%">
+							</div>
+						</div>
+						<h6>HTML/CSS <span> 60% </span></h6>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 60%">
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--education-->
+
+		<!--portfolio-->
+		<div id="portfolio" class="portfolio">
+			<div class="container">
+				<h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">作品</h3>
+				<div class="sap_tabs">
+					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+							<li class="resp-tab-item"><span>All</span></li>
+							<li class="resp-tab-item"><span>Web</span></li>
+							<li class="resp-tab-item"><span>Game</span></li>
+							<li class="resp-tab-item"><span>Photography</span></li>
+							<li class="resp-tab-item"><span>Painting</span></li>
+						</ul>
+						<div class="clearfix"> </div>
+						<div class="resp-tabs-container">
+							<div class="tab-1 resp-tab-content">
+								<div class="tab_img">
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/数字视网膜视频转换系统.jpg" class="swipebox" title="数字视网膜视频转换系统">
+												<img src="images/数字视网膜视频转换系统.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>客户是公安局内部员工； 该项目主要是为了让顾客更好搜索犯罪分子，以便于查找犯罪分子特征。</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/智慧影像分析系统.jpg" class="swipebox" title="智慧影像分析系统">
+												<img src="images/智慧影像分析系统.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>用于打击违法犯罪活动等工作带来沉重压力，应用于交叉路口车辆的监测记录，包括机动车非机动车图片、车辆号牌、车辆特征数据，人脸识别，人体特征数据等展示部分。</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/杭州博雅鸿图视频技术有限公司.jpg" class="swipebox" title="杭州博雅鸿图视频技术有限公司">
+												<img src="images/杭州博雅鸿图视频技术有限公司.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>杭州博雅鸿图视频技术有限公司，是专注为视频大数据智能化应用提供视觉智能芯片及系统解决方案的高技术公司。</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/2048.jpg" class="swipebox" title="2048">
+												<img src="images/2048.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>2048小游戏</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/百度地图API3.0demo.jpg" class="swipebox" title="百度地图">
+												<img src="images/百度地图API3.0demo.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>百度地图</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/css3绘制安卓动态机器人.jpg" class="swipebox" title="css3绘制安卓动态机器人">
+												<img src="images/css3绘制安卓动态机器人.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>css3绘制安卓动态机器人</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/拍摄他人.jpg" class="swipebox" title="他人">
+												<img src="images/拍摄他人.jpg" alt="" class="img-responsive" />
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>拍摄他人</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid effect-sarah">
+											<a href="images/创建头像.jpg" class="swipebox" title="创意头像">
+												<img src="images/创建头像.jpg" alt="" class="img-responsive" />
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>创意头像</p>
+												</div>
+											</a>
+										</div>
+									</div>
+
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+
+							<!--网站-->
+							<div class="tab-1 resp-tab-content">
+								<div class="tab_img">
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/杭州博雅鸿图视频技术有限公司.jpg" class="swipebox" title="杭州博雅鸿图视频技术有限公司">
+												<img src="images/杭州博雅鸿图视频技术有限公司.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>杭州博雅鸿图视频技术有限公司，是专注为视频大数据智能化应用提供视觉智能芯片及系统解决方案的高技术公司。</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/数字视网膜视频转换系统.jpg" class="swipebox" title="数字视网膜视频转换系统">
+												<img src="images/数字视网膜视频转换系统.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>客户是公安局内部员工； 该项目主要是为了让顾客更好搜索犯罪分子，以便于查找犯罪分子特征。</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/智慧影像分析系统.jpg" class="swipebox" title="智慧影像分析系统">
+												<img src="images/智慧影像分析系统.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>用于打击违法犯罪活动等工作带来沉重压力，应用于交叉路口车辆的监测记录，包括机动车非机动车图片、车辆号牌、车辆特征数据，人脸识别，人体特征数据等展示部分。</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<!--网站-->
+
+							<!--游戏-->
+							<div class="tab-1 resp-tab-content">
+								<div class="tab_img">
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/2048.jpg" class="swipebox" title="2048">
+												<img src="images/2048.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>2048小游戏</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/百度地图API3.0demo.jpg" class="swipebox" title="百度地图">
+												<img src="images/百度地图API3.0demo.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>百度地图</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/css3绘制安卓动态机器人.jpg" class="swipebox" title="css3绘制安卓动态机器人">
+												<img src="images/css3绘制安卓动态机器人.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>css3绘制安卓动态机器人</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<!--游戏-->
+
+							<!--摄影-->
+							<div class="tab-1 resp-tab-content">
+								<div class="tab_img">
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/拍摄他人.jpg" class="swipebox" title="他人">
+												<img src="images/拍摄他人.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>拍摄他人</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<!--摄影-->
+
+							<!--绘画-->
+							<div class="tab-1 resp-tab-content">
+								<div class="tab_img">
+									<div class="col-md-4 portfolio-grids">
+										<div class="grid">
+											<a href="images/创建头像.jpg" class="swipebox" title="创意头像">
+												<img src="images/创建头像.jpg" alt="" class="img-responsive" height="445" width="700"/>
+												<div class="figcaption">
+													<h3>My<span> Project</span></h3>
+													<p>创意头像</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<!--绘画-->
+						</div>
+					</div>
+				</div>
+
+				<!--ResponsiveTabs-->
+				<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+				<script type="text/javascript">
+					$(document).ready(function () {
+						$('#horizontalTab').easyResponsiveTabs({
+							type: 'default', //Types: default, vertical, accordion
+							width: 'auto', //auto or any width like 600px
+							fit: true   // 100% fit in a container
+						});
+					});
+				</script>
+				<!--ResponsiveTabs-->
+
+				<!-- swipe box js -->
+				<script src="js/jquery.swipebox.min.js"></script>
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+				</script>
+				<!-- //swipe box js -->
+			</div>
+		</div>
+		<!--portfolio-->
+
+		<!--footer-->
+		<div class="footer">
+			<div class="container">
+				<p>©2019我的个人简历</p>
+			</div>
+		</div>
+		<!--footer-->
+
+		<!--smooth-scrolling-of-move-up-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear'
+				};
+
+				$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+		</script>
+		<!--smooth-scrolling-of-move-up-->
+		<script src="js/bootstrap.js"></script>
+	</body>
+</html>
